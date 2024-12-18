@@ -12,7 +12,7 @@ use embassy_time::{Duration, Timer};
 async fn main(_spawner: Spawner) {
     let p = embassy_stm32::init(Default::default());
     info!("Hello World");
-    let pin = p.PB7;
+    let pin = p.PС13;
     let mut led = Output::new(pin, Level::High, Speed::Low);
 
     let delay = Duration::from_secs(1);
